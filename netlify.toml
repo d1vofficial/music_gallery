@@ -1,0 +1,8 @@
+[build]
+  functions = "netlify/functions" # Path to your serverless functions folder
+  publish = "dist" # Path to your React build folder (use "build" if that's your output directory)
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
