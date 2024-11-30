@@ -24,9 +24,13 @@ dist-ssr
 *.sw?
 
 .vercel
+.netlify/
 
 .env
 
 build/
 out/
 
+
+# Local Netlify folder
+.netlify

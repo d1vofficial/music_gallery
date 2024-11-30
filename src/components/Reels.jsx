@@ -7,7 +7,7 @@ const Reels = () => {
     const fetchReels = async () => {
       try {
         // Call the serverless function
-        const response = await fetch("/api/reels");
+        const response = await fetch(".netlify/functions/reels");
         if (!response.ok) throw new Error("Failed to fetch reels");
         const data = await response.json();
         setReels(data); // Array of permalinks
