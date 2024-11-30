@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+// import fetch from 'node-fetch';
 
 export const handler = async (event, context) => {
   const accessToken = process.env.INSTAGRAM_TOKEN;
@@ -48,7 +48,7 @@ export const handler = async (event, context) => {
       body: JSON.stringify(reelsData), // Return reels data as JSON
     };
   } catch (error) {
-    console.error("Error in serverless function:", error.message);
+    // console.error("Error in serverless function:", error.message);
     return {
       statusCode: 500,
       body: JSON.stringify({
